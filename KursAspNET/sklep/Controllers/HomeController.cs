@@ -13,6 +13,7 @@ namespace sklep.Controllers
         {
             return View();
             //nowy komentarz
+            //pracujemy nad funkcjonalnoscia logowania
         }
     }
 }

@@ -12,6 +12,7 @@ namespace sklep.Controllers
         public ActionResult Index()
         {
             return View();
+            //nowy komentarz
         }
     }
 }

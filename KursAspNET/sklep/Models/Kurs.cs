@@ -18,9 +18,9 @@ namespace sklep.Models
         [StringLength(100)]
         public string AutorKursu { get; set; }
 
-        [StringLength(100)]
-        public DateTime DataDodania { get; set; }
         
+        public DateTime DataDodania { get; set; }
+        [StringLength(100)]
         public string NazwaPlikuObrazka { get; set; }
         public string OpisKursu { get; set; }
         public decimal CenaKursu { get; set; }

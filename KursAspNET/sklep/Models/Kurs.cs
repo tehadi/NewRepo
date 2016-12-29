@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace sklep.Models
 {
@@ -10,8 +11,16 @@ namespace sklep.Models
     {
         public int KursId { get; set; }
         public int KategoriaId { get; set; }
+        [Required(ErrorMessage = "Wprowadz nazwe kursu")]
+        [StringLength(100)]
         public string TytulKursu { get; set; }
+        [Required(ErrorMessage = "Wprowadz auor")]
+        [StringLength(100)]
+        public string AutorKursu { get; set; }
+
+        [StringLength(100)]
         public DateTime DataDodania { get; set; }
+        
         public string NazwaPlikuObrazka { get; set; }
         public string OpisKursu { get; set; }
         public decimal CenaKursu { get; set; }

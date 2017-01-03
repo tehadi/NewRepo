@@ -12,7 +12,14 @@ namespace sklep.DAL
     class KursyContext : DbContext
     {
         public KursyContext():base("KursyContext")
-        { }
+        {
+
+        }
+
+        static KursyContext()
+        {
+            Database.SetInitializer<KursyContext>(new kursyInitializer()); //wywołanie inicializera
+        }
         public DbSet<Kurs> Kursy { get; set; }
         public DbSet<Kategoria> Kategorie { get; set; }
         public DbSet<Zamowienie> Zamowienia { get; set; }

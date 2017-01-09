@@ -148,6 +148,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701030617258_InitialCreate.cs" />
+    <Compile Include="Migrations\201701030617258_InitialCreate.Designer.cs">
+      <DependentUpon>201701030617258_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701030628289_dodanie pola opiskroocny.cs" />
+    <Compile Include="Migrations\201701030628289_dodanie pola opiskroocny.Designer.cs">
+      <DependentUpon>201701030628289_dodanie pola opiskroocny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Kategoria.cs" />
     <Compile Include="Models\Kurs.cs" />
     <Compile Include="Models\PozycjaZamowienia.cs" />
@@ -155,7 +164,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -176,6 +187,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701030617258_InitialCreate.resx">
+      <DependentUpon>201701030617258_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701030628289_dodanie pola opiskroocny.resx">
+      <DependentUpon>201701030628289_dodanie pola opiskroocny.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

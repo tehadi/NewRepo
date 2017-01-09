@@ -26,6 +26,8 @@ namespace sklep.Models
         public decimal CenaKursu { get; set; }
         public bool BestSeller { get; set; }
         public bool Ukryty { get; set; }
+        public string OpisSkrocony { get; set; }
+        
 
         public virtual Kategoria Kategoria { get; set; }
     }

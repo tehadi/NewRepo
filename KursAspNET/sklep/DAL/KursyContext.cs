@@ -9,7 +9,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace sklep.DAL
 {
-    class KursyContext : DbContext
+    public class KursyContext : DbContext
     {
         public KursyContext():base("KursyContext")
         {
